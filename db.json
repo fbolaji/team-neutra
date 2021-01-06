@@ -1,0 +1,328 @@
+{
+  "formConfig": {
+    "registerForm": [
+      {
+        "label": "Name *",
+        "id": "name",
+        "name": "name",
+        "type": "text",
+        "placeholder": "Please enter your name",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 4,
+          "error": "Name is required. Minimum 4 characters."
+        }
+      },
+      {
+        "label": "email *",
+        "id": "email",
+        "name": "email",
+        "type": "email",
+        "placeholder": "Please enter your email",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "error": "A valid email address is required."
+        }
+      },
+      {
+        "label": "mobile *",
+        "id": "mobile",
+        "name": "mobile",
+        "type": "telephone",
+        "placeholder": "Please enter your mobile number",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "error": "Mobile number is required."
+        }
+      },
+      {
+        "label": "Photo *",
+        "id": "Photo",
+        "name": "Photo",
+        "type": "file",
+        "placeholder": "Please enter your Photo",
+        "isRequired": false
+      },
+      {
+        "label": "Team Code *",
+        "id": "teamCode",
+        "name": "teamCode",
+        "type": "password",
+        "placeholder": "Please enter your team code",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 4,
+          "error": "Team code is required. Minimum 4 characters"
+        }
+      },
+      {
+        "label": "Team Badge *",
+        "id": "badge",
+        "name": "badge",
+        "type": "file",
+        "placeholder": "Please upload your team badge",
+        "isRequired": false,
+        "validator": {
+          "isRequired": false,
+          "error": "Team badge is required."
+        }
+      },
+      {
+        "label": "Team name *",
+        "id": "teamName",
+        "name": "teamName",
+        "type": "text",
+        "placeholder": "Please enter your team name",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 4,
+          "error": "Team name is required. Minimum 4 characters"
+        }
+      },
+      {
+        "label": "Team location/Address *",
+        "id": "teamLocation",
+        "name": "teamLocation",
+        "type": "text",
+        "placeholder": "Please enter your team location/Address",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "error": "Team location or address is required."
+        }
+      },
+      {
+        "label": "Team colour *",
+        "id": "teamColour",
+        "name": "teamColour",
+        "type": "text",
+        "placeholder": "Please enter your team colour"
+      }
+    ],
+    "loginForm": [
+      {
+        "label": "Team Code *",
+        "id": "teamCode",
+        "name": "teamCode",
+        "type": "text",
+        "placeholder": "Please enter your team code",
+        "isRequired": false
+      },
+      {
+        "label": "Role *",
+        "id": "role",
+        "name": "role",
+        "type": "select",
+        "placeholder": "Please enter your role",
+        "isRequired": false,
+        "options": [
+          "Team leader/coach",
+          "Team player",
+          "Guardian"
+        ]
+      },
+      {
+        "label": "Your Name *",
+        "id": "name",
+        "name": "name",
+        "type": "text",
+        "placeholder": "Please enter your name",
+        "isRequired": false
+      }
+    ],
+    "eventForm": [
+      {
+        "label": "Date and Time *",
+        "id": "dateTime",
+        "name": "dateTime",
+        "type": "text",
+        "placeholder": "Please enter date and time",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 6,
+          "error": "Date and time is required."
+        }
+      },
+      {
+        "label": "Address *",
+        "id": "address",
+        "name": "address",
+        "type": "text",
+        "placeholder": "Please enter venue address",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 6,
+          "error": "Address is required."
+        }
+      },
+      {
+        "label": "PostCode *",
+        "id": "postcode",
+        "name": "postcode",
+        "type": "text",
+        "placeholder": "Please enter post code",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 6,
+          "error": "Postcode is required. Minimum 6 characters."
+        }
+      },
+      {
+        "label": "Comment",
+        "id": "comment",
+        "name": "comment",
+        "type": "textArea",
+        "placeholder": "Please enter comment.",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 4,
+          "error": "Comment is required.."
+        }
+      }
+    ],
+    "addMemberForm": [
+      {
+        "label": "Name *",
+        "id": "name",
+        "name": "name",
+        "type": "text",
+        "placeholder": "Please enter member's name",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 2,
+          "error": "Name is required."
+        }
+      },
+      {
+        "label": "Attending*",
+        "id": "attending",
+        "name": "attending",
+        "type": "select",
+        "options": [
+          {
+            "label": "yes"
+          },
+          {
+            "label": "maybe"
+          },
+          {
+            "label": "no"
+          }
+        ],
+        "placeholder": "Please confirm your attendance",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "error": "Attendance confirmation is required."
+        }
+      },
+      {
+        "label": "Guardian *",
+        "id": "guardian",
+        "name": "guardian",
+        "type": "text",
+        "placeholder": "Please enter guardian's name",
+        "isRequired": true,
+        "validator": {
+          "isRequired": true,
+          "minLength": 2,
+          "error": "Guardian's name is required."
+        }
+      }
+    ]
+  },
+  "teams": [
+    {
+      "id": 1,
+      "name": "Francis Bolaji",
+      "email": "francis.bolaji@btinternet.com",
+      "mobile": "07899867140",
+      "role": "Coach",
+      "teamCode": "NEFCU15",
+      "teamName": "Northfleet Eagles Youth FC",
+      "teamLocation": "Gravesend, Kent DA11",
+      "teamColour": "Red/Black",
+      "members": [
+        {
+          "name": "Banji",
+          "guardian": "Simone",
+          "confirm": "Playing",
+          "brief": ""
+        },
+        {
+          "name": "Nike Sean",
+          "guardian": "FemiB",
+          "confirm": "Not playing",
+          "brief": "A bit sick"
+        },
+        {
+          "name": "Arteta",
+          "guardian": "George Graham",
+          "confirm": "Not playing",
+          "brief": "On holiday from Friday 18th December"
+        },
+        {
+          "name": "Tobi B",
+          "guardian": "Femi Bolaji",
+          "confirm": "playing",
+          "brief": ""
+        }
+      ],
+      "event": {
+        "dateTime": "Sunday at 2pm",
+        "address": "Darford FC Stadium",
+        "postcode": "DA11 OJY",
+        "comment": "Meet at new pitch"
+      }
+    },
+    {
+      "name": "Francisb",
+      "email": "info@gulpdigital.com",
+      "emailAddressValidated": false,
+      "mobile": "4356566435",
+      "teamCode": "Testb",
+      "teamName": "TestTeam12",
+      "teamLocation": "Bean",
+      "teamColour": "Green/Black",
+      "events": [],
+      "members": [],
+      "id": 2
+    },
+    {
+      "name": "Francisb",
+      "email": "info@gulpdigital.com",
+      "emailAddressValidated": false,
+      "mobile": "4356566435",
+      "teamCode": "Testb",
+      "teamName": "TestTeam12",
+      "teamLocation": "Bean",
+      "teamColour": "Green/Black",
+      "events": [],
+      "members": [],
+      "id": 3
+    },
+    {
+      "name": "Francisb",
+      "email": "info@gulpdigital.com",
+      "emailAddressValidated": false,
+      "mobile": "4356566435",
+      "teamCode": "Testb",
+      "teamName": "TestTeam12",
+      "teamLocation": "Bean",
+      "teamColour": "Green/Black",
+      "events": [],
+      "members": [],
+      "id": 4
+    }
+  ]
+}
